@@ -41,7 +41,9 @@ class _OnBoardingState extends State<OnBoarding> {
             itemBuilder: (_, i) {
               return Padding(
                 padding: const EdgeInsets.all(40),
-                child: Column(
+                
+                child: SingleChildScrollView (
+                  child: Column(
                   children: [
                     SvgPicture.asset(
                       contents[i].image,
@@ -63,6 +65,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     )
                   ],
                 ),
+              )
               );
             },
           ),
@@ -77,7 +80,7 @@ class _OnBoardingState extends State<OnBoarding> {
           ),
         ),
         Container(
-          height: 60,
+          height: 50,
           margin: EdgeInsets.all(40),
           width: double.infinity,
           child: FlatButton(
