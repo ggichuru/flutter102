@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter102/Screens/Welcome/welcome_screen.dart';
 import 'package:flutter102/Screens/onBoarding/onBoarding.dart';
 import 'package:flutter102/constants.dart';
 
